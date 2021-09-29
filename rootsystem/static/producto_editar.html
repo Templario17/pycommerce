@@ -1,0 +1,104 @@
+<div class="container">
+    <div class="card border-dark mb-3">
+
+        <div class="card-body">
+         <h5 class="card-title">Editar Producto </h5>
+        <form  class="form-horizontal" action="/producto/actualizar" method="POST" 
+               enctype="multipart/form-data">
+        <div class="row g-3">
+            <input type="hidden" name="producto_id" value="$producto_id">
+            <div class="col">
+                <img  $imagen width="450" height="300"> </br>
+                <label class="form-label">Imagen del producto</label>
+               <input class="form-control" type="file" id="imagen" name="imagen" id="imagen">
+            </div>
+            <div class="col">
+                <label for="categoria" class="col-sm-3 control-label">Categoria:</label>
+                    <select name="categoria" id="categoria" class="form-select">
+                        <!--opciones-->
+                        <option value="6">Accesorio</option>
+                        <option value="7">Led</option>
+                        <option value="8">Electrico</option>
+                        <!--opciones-->
+                    </select>
+              
+                    <label for="denominacion" class="col-sm-6 control-label">Denominacion:</label>
+                    <input value="$denominacion" type="text" class="form-control" id="denominacion"
+                   name="denominacion" required>
+                <label for="descripcion" class="col-sm-6 control-label">Descripcion:</label>
+                 <input value="$descripcion" type="text" class="form-control" id="descripcion" 
+                   name="descripcion" required>
+                </br>
+                <label for="precio_lista" class="col-sm-3 control-label">Precio Lista:</label>
+                <input value="$precio_lista" type="text" class="form-control" id="precio_lista"
+            	    name="precio_lista" required>
+            	<label for="precio_oferta" class="col-sm-3 control-label">Precio Oferta:</label>
+            	<input value=$precio_oferta type="text" class="form-control" id="precio_oferta"
+            	    name="precio_oferta" required>
+               </br>
+               <div class="col-sm-offset-3 col-sm-9">
+                 <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+            </div>
+                 
+        </div>
+        </form>
+<!--        <form class="form-horizontal" action="/producto/actualizar" method="POST">-->
+<!--            <div class="form-group">-->
+<!--                <input type="hidden" name="producto_id" value="$producto_id">-->
+<!--                <label for="categoria" class="col-sm-3 control-label">Categoria:</label>-->
+<!--                <div class="col-sm-4">-->
+<!--                    <select name="categoria" id="categoria" class="form-select">-->
+<!--                        <!--opciones-->
+<!--                        <option value="6">Accesorio</option>-->
+<!--                        <option value="7">Led</option>-->
+<!--                        <option value="8">Electrico</option>-->
+<!--                        <!--opciones-->
+<!--                    </select>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            </br>-->
+<!--           <div class="form-group">-->
+<!--            <label for="denominacion" class="col-sm-3 control-label">Denominacion:</label>-->
+<!--            <div class="col-sm-6">-->
+<!--            <input value="$denominacion" type="text" class="form-control" id="denominacion" -->
+<!--                name="denominacion" required>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--            <br/>-->
+<!--           <div class="form-group">-->
+<!--            <label for="descripcion" class="col-sm-3 control-label">Descripcion:</label>-->
+<!--            <div class="col-sm-10">-->
+<!--                -->
+<!--                <input value="$descripcion" type="text" class="form-control" id="descripcion" -->
+<!--                name="descripcion" required>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--			</br>-->
+<!--			<H5>Precios Producto</H5>-->
+<!--           	<div class="form-group row">-->
+<!--            	<label for="precio_lista" class="col-sm-3 control-label">Precio Lista:</label>-->
+<!--            	<div class="col-sm-2">-->
+<!--            	<input value="$precio_lista" type="text" class="form-control" id="precio_lista" -->
+<!--            	    name="precio_lista" required>-->
+<!--            	</div>-->
+<!--          	</div>-->
+<!--          	</br>-->
+<!--           	<div class="form-group row">-->
+<!--            	<label for="precio_oferta" class="col-sm-3 control-label">Precio Oferta:</label>-->
+<!--            	<div class="col-sm-2">-->
+<!--            	<input value=$precio_oferta type="text" class="form-control" id="precio_oferta" -->
+<!--            	    name="precio_oferta" required>-->
+<!--            	</div>-->
+<!--          	</div>-->
+<!--			</br>	-->
+
+<!--            <div class="form-group">-->
+<!--            <div class="col-sm-offset-3 col-sm-9">-->
+<!--                 <button type="submit" class="btn btn-primary">Editar</button>-->
+<!--            </div>-->
+<!--            </div>-->
+<!--        </form>-->
+        </div>
+        </div>
+    </div>

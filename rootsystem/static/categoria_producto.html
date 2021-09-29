@@ -1,0 +1,66 @@
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+      crossorigin="anonymous">
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
+        crossorigin="anonymous"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>        
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+<!--jQuery CSS-->
+<link rel="stylesheet" type="text/css" 
+        href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>     
+<!--jQuery JavaScript-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js" 
+            language="javascript"></script>
+<script type="text/javascript" 
+        src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+        
+<!--contenido-->
+<section class="py-5 bg-light">
+<div class="container px-4 px-lg-5 mt-5">
+    <h2 class="fw-bolder mb-4"> Producto Relacionados</h2>
+    
+    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+      <!--lista-->
+        <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" $imagen width="450" height="300" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">$denominacion</h5>
+                                    <!-- Product price-->
+                                    $ $precio_oferta - $ $precio_lista
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto" 
+                                    href="/producto/ver/$producto_id">Ver producto</a></div>
+                            </div>
+                        </div>
+                    </div>
+      <!--lista-->          
+   </div>
+</div>
+</br>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link" >Previous</a></li>
+    <li class="page-item"><a class="page-link" >1</a></li>
+    <li class="page-item"><a class="page-link" >2</a></li>
+    <li class="page-item"><a class="page-link" >3</a></li>
+    <li class="page-item"><a class="page-link" >Next</a></li>
+  </ul>
+</nav>
+</section>
+
+
+
+

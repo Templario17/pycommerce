@@ -1,0 +1,27 @@
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+	<div class="card text-white bg-dark mb-3">
+    <div class="card-body">
+		<h5 class="card-title">
+            <ion-icon name="pricetag-outline"></ion-icon> Elige una categoria </h5>
+    	<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+    <option selected>Selecciona la categoria</option>
+  <!--select-->
+    <option value="$categoria_id" 
+        onclick="cargar('/categoria/productos/$categoria_id', '$denominacion');">
+            $denominacion</option>
+  <!--select-->
+    </select>
+<!--TODO-->
+<!-- pendiente realizar listado de productos por categoria -->
+    </div>
+	</div>
+</div>
+    <div class="container">
+	    <div id="respuesta"></div>
+	</div>
+	<script lenguaje="javascript" src="/static/js/ajax.js"></script>
+</div>
+

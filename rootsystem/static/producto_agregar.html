@@ -1,0 +1,48 @@
+ <div class="container">
+ <h3>Agregar Producto al Inventario</h3>
+ <form class="form-horizontal" action="/producto/guardar" method="POST" 
+    enctype="multipart/form-data">
+    <div class="row g-3">
+        <div class="col">
+            <input type="text" class="form-control" id="denominacion" 
+                placeholder="Denominacion" name="denominacion" required>
+        </div>
+        <div class="col">
+            <select name="categoria" id="categoria" class="form-select">
+                        <!--opciones-->
+                <option selected>Elija una categoria ...</option>
+                <option value="6">Accesorio</option>
+                <option value="7">Led</option>
+                <option value="8">Electrico</option>
+                        <!--opciones-->
+            </select>
+    </div>
+    <div class="row g-3">
+        <div class="col">
+        <textarea type="text" rows="2" class="form-control" id="descripcion" 
+            name="descripcion" placeholder="Descripcion" required></textarea>
+        </div>
+        <div class="col">
+             <label class="form-label">Imagen del producto</label>
+               <input class="form-control" type="file" id="imagen" name="imagen" id="imagen">    
+        </div>
+    </div>
+    <h4>Precios del Producto</h4>
+    <div class="row g-3">
+        <div class="col">
+        <input type="text" class="form-control" id="lista" name="lista"
+            placeholder="$ Precio de lista " required>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" id="oferta" name="oferta" 
+                placeholder="$ Precio de Oferta" required>
+        </div>
+    </div>
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+                 <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    
+ </form>
+</div>

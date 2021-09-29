@@ -1,0 +1,46 @@
+<!--jQuery CSS-->
+<link rel="stylesheet" type="text/css" 
+        href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>     
+<!--jQuery JavaScript-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js" 
+            language="javascript"></script>
+<script type="text/javascript" 
+        src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+<!--contenido-->
+
+<h1>Inventario de Productos</h1>
+    <table class="table table-hover" id="inventario">
+  <thead>
+    <tr>
+      <th colspan="col" >Producto</th>
+      <th scope="col" >Denominacion</th>
+      <th scope="col" class="text-center">SKU</th>
+	  <th scope="col" class="text-center">Precio Normal</th>
+	  <th scope="col" class="text-center">Oferta</th>
+	  <th scope="col" class="text-center">Admin</th>
+    </tr>
+  </thead>
+  <tbody>
+<!--lista-->
+    <tr>
+      <th><img $imagen class="img-fluid" alt="..." width="60" height="60"></th>
+      <td>$denominacion</td>
+      <td class="text-center">$sku</td>
+      <td class="text-center">$ $precio_lista</td>
+      <td class="text-center">$ $precio_oferta</td>
+	  <td class="text-center"> 
+			<a class="btn btn-outline-danger" href="/producto/eliminar/$producto_id">
+				<ion-icon name="trash"></ion-icon>
+			</a>
+			<a class="btn btn-outline-primary" href="/producto/editar/$producto_id" >
+			    <ion-icon name="create-outline"></ion-icon>
+			</a></td>
+    </tr>
+<!--lista-->
+  </tbody>
+</table>
+<script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+            $('#inventario').DataTable();
+            });</script>
+
